@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DDD284B-D44D-44B4-9B9C-43FBE3C2E69D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SW_Skills</RootNamespace>
+    <AssemblyName>SW_Skills</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SW_Skill_shablon">
+      <HintPath>..\..\SW_Skill_shablon\SW_Skill_shablon\bin\Release\SW_Skill_shablon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acrobatic_skill.cs" />
+    <Compile Include="Astronavigation_skill.cs" />
+    <Compile Include="Bombing_skill.cs" />
+    <Compile Include="Change_looking.cs" />
+    <Compile Include="Climbing_skill.cs" />
+    <Compile Include="Craft_skill.cs" />
+    <Compile Include="Dancing_skill.cs" />
+    <Compile Include="Deception_skill.cs" />
+    <Compile Include="Diplomacy_skill.cs" />
+    <Compile Include="Driving_skill.cs" />
+    <Compile Include="Drug_production_skill.cs" />
+    <Compile Include="Engineering_skill.cs" />
+    <Compile Include="Evasion.cs" />
+    <Compile Include="Fortitude_skill.cs" />
+    <Compile Include="Hand_combat.cs" />
+    <Compile Include="Heavy_athletics.cs" />
+    <Compile Include="Heavy_gun_skill.cs" />
+    <Compile Include="Insight_skill.cs" />
+    <Compile Include="Interrogation_skill.cs" />
+    <Compile Include="Knowledge_skill.cs" />
+    <Compile Include="Language_skill.cs" />
+    <Compile Include="Leadership_skill.cs" />
+    <Compile Include="Light_gun_skill.cs" />
+    <Compile Include="Light_saber_crafting.cs" />
+    <Compile Include="Light_saber_skill.cs" />
+    <Compile Include="Medicine_skill.cs" />
+    <Compile Include="Music_skill.cs" />
+    <Compile Include="Observation_skill.cs" />
+    <Compile Include="Old_weapon_skill.cs" />
+    <Compile Include="Pilot_skill.cs" />
+    <Compile Include="Programming_skill.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repair_skill.cs" />
+    <Compile Include="Resistance_skill.cs" />
+    <Compile Include="Riding_skill.cs" />
+    <Compile Include="Saber_skill.cs" />
+    <Compile Include="Science_skill.cs" />
+    <Compile Include="Security_skill.cs" />
+    <Compile Include="Seduction_skill.cs" />
+    <Compile Include="Singing_skill.cs" />
+    <Compile Include="Sniper_gun_skill.cs" />
+    <Compile Include="Starbattle_tactics_skill.cs" />
+    <Compile Include="Stealth_class.cs" />
+    <Compile Include="Surviing_skill.cs" />
+    <Compile Include="Swimming_Skill.cs" />
+    <Compile Include="Throw_skill.cs" />
+    <Compile Include="Trading_skill.cs" />
+    <Compile Include="Training_pet_skill.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
